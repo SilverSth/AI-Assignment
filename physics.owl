@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/11/physics#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/physics"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#dependsOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Acceleration"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Mass"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Force"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#hasFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#hasFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Formula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#hasunit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#hasunit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Mass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#hasvalue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#hasvalue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Force"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#Acceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#Force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#ForceFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#ForceFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#Formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#Formula"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#Mass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#Mass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#PhysicsConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/physics#WorkFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/physics#WorkFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/physics#Formula"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
